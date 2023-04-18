@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    // our custom config over default nextjs one
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+    "strictNullChecks": true,
+    "strictBindCallApply": true
+  },
+  "exclude": [".yarn", "node_modules"],
+  "include": ["next-env.d.ts", "src/**/*", ".next/types/**/*.ts"]
+}
